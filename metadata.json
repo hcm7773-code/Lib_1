@@ -1,0 +1,6 @@
+{
+  "name": "世界童書數位圖書館",
+  "description": "專為各國孩童打造的多語言數位繪本圖書館，提供智慧語音朗讀、雙語對照、生字學習、AI 故事問答與繪本創作工坊。",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

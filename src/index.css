@@ -1,0 +1,550 @@
+@import "tailwindcss";
+
+/* 🗺️ Reading Adventure Map Fantasy Keyframes & Animations */
+@keyframes map-float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes map-float-slow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(0.8deg);
+  }
+}
+
+@keyframes map-float-reverse {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(8px) rotate(-0.8deg);
+  }
+}
+
+@keyframes cloud-drift-slow {
+  0% {
+    transform: translateX(-20%);
+  }
+  100% {
+    transform: translateX(120%);
+  }
+}
+
+@keyframes cloud-drift-fast {
+  0% {
+    transform: translateX(-20%);
+  }
+  100% {
+    transform: translateX(120%);
+  }
+}
+
+@keyframes star-twinkle {
+  0%, 100% {
+    opacity: 0.25;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.3);
+  }
+}
+
+@keyframes radiant-pulse {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(251, 191, 36, 0.4), inset 0 0 12px rgba(251, 191, 36, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(251, 191, 36, 0.8), inset 0 0 25px rgba(251, 191, 36, 0.4);
+  }
+}
+
+@keyframes radiant-border-flow {
+  0% {
+    border-color: #fbbf24;
+  }
+  33% {
+    border-color: #f59e0b;
+  }
+  66% {
+    border-color: #34d399;
+  }
+  100% {
+    border-color: #fbbf24;
+  }
+}
+
+@keyframes orbital-glow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes shooting-star {
+  0% {
+    transform: translateX(0) translateY(0) rotate(-35deg);
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-450px) translateY(320px) rotate(-35deg);
+    opacity: 0;
+  }
+}
+
+@keyframes dash-flow {
+  to {
+    stroke-dashoffset: -40;
+  }
+}
+
+@keyframes mist-drift {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(1) translateY(0);
+  }
+  50% {
+    opacity: 0.65;
+    transform: scale(1.05) translateY(-4px);
+  }
+}
+
+.animate-map-float {
+  animation: map-float 4.5s ease-in-out infinite;
+}
+
+.animate-map-float-slow {
+  animation: map-float-slow 6s ease-in-out infinite;
+}
+
+.animate-map-float-reverse {
+  animation: map-float-reverse 5.5s ease-in-out infinite;
+}
+
+.animate-cloud-drift-1 {
+  animation: cloud-drift-slow 38s linear infinite;
+}
+
+.animate-cloud-drift-2 {
+  animation: cloud-drift-fast 26s linear infinite;
+}
+
+.animate-star-twinkle {
+  animation: star-twinkle 2.5s ease-in-out infinite;
+}
+
+.animate-radiant-pulse {
+  animation: radiant-pulse 3s ease-in-out infinite;
+}
+
+.animate-radiant-border {
+  animation: radiant-border-flow 4s ease-in-out infinite;
+}
+
+.animate-orbital-glow {
+  animation: orbital-glow 12s linear infinite;
+}
+
+.animate-dash-flow {
+  animation: dash-flow 2.5s linear infinite;
+}
+
+.animate-mist-drift {
+  animation: mist-drift 4s ease-in-out infinite;
+}
+
+/* 🎥 Cinema Ken Burns Dynamic Slideshow Pan & Zoom Animation */
+@keyframes kenBurnsEffect {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+  50% {
+    transform: scale(1.08) translate(-1.5%, -1%);
+  }
+  100% {
+    transform: scale(1.03) translate(1.5%, 0.5%);
+  }
+}
+
+.animate-kenBurns {
+  animation: kenBurnsEffect 12s ease-in-out infinite alternate;
+}
+
+/* 🏆 3D Relief Embossed Medal & Badge Showcase Animations */
+@keyframes badgeFloat {
+  0%, 100% {
+    transform: translateY(0px) rotateX(0deg);
+  }
+  50% {
+    transform: translateY(-6px) rotateX(4deg);
+  }
+}
+
+@keyframes reliefShimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes rotate3dGlow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-badge-float {
+  animation: badgeFloat 4s ease-in-out infinite;
+}
+
+.emboss-3d-gold {
+  box-shadow:
+    0 10px 25px -5px rgba(245, 158, 11, 0.4),
+    inset 0 2px 4px rgba(255, 255, 255, 0.7),
+    inset 0 -4px 6px rgba(180, 83, 9, 0.8),
+    0 0 0 3px rgba(251, 191, 36, 0.7);
+}
+
+.emboss-3d-silver {
+  box-shadow:
+    0 10px 25px -5px rgba(148, 163, 184, 0.3),
+    inset 0 2px 4px rgba(255, 255, 255, 0.8),
+    inset 0 -4px 6px rgba(51, 65, 85, 0.8),
+    0 0 0 3px rgba(203, 213, 225, 0.7);
+}
+
+.emboss-3d-crystal {
+  box-shadow:
+    0 10px 25px -5px rgba(168, 85, 247, 0.4),
+    inset 0 2px 4px rgba(255, 255, 255, 0.8),
+    inset 0 -4px 6px rgba(107, 33, 168, 0.8),
+    0 0 0 3px rgba(216, 180, 254, 0.7);
+}
+
+.emboss-3d-emerald {
+  box-shadow:
+    0 10px 25px -5px rgba(16, 185, 129, 0.4),
+    inset 0 2px 4px rgba(255, 255, 255, 0.8),
+    inset 0 -4px 6px rgba(6, 95, 70, 0.8),
+    0 0 0 3px rgba(110, 231, 183, 0.7);
+}
+
+/* 📐 Blueprint Schematic Grid & 3D Flip Card Utilities */
+.blueprint-grid-cyan {
+  background-color: #031326;
+  background-image:
+    linear-gradient(rgba(6, 182, 212, 0.15) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(6, 182, 212, 0.15) 1px, transparent 1px),
+    linear-gradient(rgba(6, 182, 212, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(6, 182, 212, 0.05) 1px, transparent 1px);
+  background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+}
+
+.blueprint-grid-amber {
+  background-color: #1a0f02;
+  background-image:
+    linear-gradient(rgba(245, 158, 11, 0.15) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(245, 158, 11, 0.15) 1px, transparent 1px),
+    linear-gradient(rgba(245, 158, 11, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(245, 158, 11, 0.05) 1px, transparent 1px);
+  background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+}
+
+.perspective-1000 {
+  perspective: 1200px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.card-flip-container {
+  perspective: 1200px;
+}
+
+.card-flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.65s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.card-flip-inner.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card-face-front,
+.card-face-back {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: rotateX(0deg);
+}
+
+.card-face-back {
+  transform: rotateY(180deg);
+}
+
+@keyframes cute-float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(3deg);
+  }
+}
+
+.animate-cute-float {
+  animation: cute-float 3s ease-in-out infinite;
+}
+
+@keyframes cute-pulse-glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 8px rgba(6, 182, 212, 0.4));
+  }
+  50% {
+    filter: drop-shadow(0 0 16px rgba(251, 191, 36, 0.7));
+  }
+}
+
+.animate-cute-glow {
+  animation: cute-pulse-glow 2.5s ease-in-out infinite;
+}
+
+/* 🌟 Visual Learning Milestone Map & Interactive Achievement Wall Keyframes */
+@keyframes breathing-glow-gold {
+  0%, 100% {
+    filter: drop-shadow(0 0 4px rgba(251, 191, 36, 0.45));
+    box-shadow: 0 0 12px rgba(251, 191, 36, 0.3), inset 0 0 6px rgba(251, 191, 36, 0.2);
+    transform: scale(1);
+  }
+  50% {
+    filter: drop-shadow(0 0 16px rgba(245, 158, 11, 0.9));
+    box-shadow: 0 0 28px rgba(251, 191, 36, 0.75), inset 0 0 14px rgba(251, 191, 36, 0.5);
+    transform: scale(1.04);
+  }
+}
+
+@keyframes breathing-glow-emerald {
+  0%, 100% {
+    filter: drop-shadow(0 0 4px rgba(52, 211, 153, 0.45));
+    box-shadow: 0 0 12px rgba(52, 211, 153, 0.3), inset 0 0 6px rgba(52, 211, 153, 0.2);
+    transform: scale(1);
+  }
+  50% {
+    filter: drop-shadow(0 0 16px rgba(16, 185, 129, 0.9));
+    box-shadow: 0 0 28px rgba(52, 211, 153, 0.75), inset 0 0 14px rgba(52, 211, 153, 0.5);
+    transform: scale(1.04);
+  }
+}
+
+@keyframes breathing-glow-purple {
+  0%, 100% {
+    filter: drop-shadow(0 0 4px rgba(192, 132, 252, 0.45));
+    box-shadow: 0 0 12px rgba(192, 132, 252, 0.3), inset 0 0 6px rgba(192, 132, 252, 0.2);
+    transform: scale(1);
+  }
+  50% {
+    filter: drop-shadow(0 0 16px rgba(168, 85, 247, 0.9));
+    box-shadow: 0 0 28px rgba(192, 132, 252, 0.75), inset 0 0 14px rgba(192, 132, 252, 0.5);
+    transform: scale(1.04);
+  }
+}
+
+@keyframes breathing-glow-cyan {
+  0%, 100% {
+    filter: drop-shadow(0 0 4px rgba(34, 211, 238, 0.45));
+    box-shadow: 0 0 12px rgba(34, 211, 238, 0.3), inset 0 0 6px rgba(34, 211, 238, 0.2);
+    transform: scale(1);
+  }
+  50% {
+    filter: drop-shadow(0 0 16px rgba(6, 182, 212, 0.9));
+    box-shadow: 0 0 28px rgba(34, 211, 238, 0.75), inset 0 0 14px rgba(34, 211, 238, 0.5);
+    transform: scale(1.04);
+  }
+}
+
+@keyframes badge-float-gentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-5px) rotate(1.5deg);
+  }
+}
+
+@keyframes pulse-ring-wave {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.85;
+  }
+  50% {
+    transform: scale(1.35);
+    opacity: 0.35;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+@keyframes holo-shimmer {
+  0% {
+    background-position: -200% -200%;
+  }
+  100% {
+    background-position: 200% 200%;
+  }
+}
+
+@keyframes milestone-path-dash {
+  to {
+    stroke-dashoffset: -30;
+  }
+}
+
+.animate-breathing-gold {
+  animation: breathing-glow-gold 3s ease-in-out infinite;
+}
+
+.animate-breathing-emerald {
+  animation: breathing-glow-emerald 3.2s ease-in-out infinite;
+}
+
+.animate-breathing-purple {
+  animation: breathing-glow-purple 3.4s ease-in-out infinite;
+}
+
+.animate-breathing-cyan {
+  animation: breathing-glow-cyan 3.1s ease-in-out infinite;
+}
+
+.animate-badge-float-gentle {
+  animation: badge-float-gentle 3.8s ease-in-out infinite;
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring-wave 2.4s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+.animate-holo-shimmer {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.35) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 200% 200%;
+  animation: holo-shimmer 3.5s ease infinite;
+}
+
+.animate-milestone-dash {
+  animation: milestone-path-dash 2s linear infinite;
+}
+
+/* 🎯 Goal Achieved Dynamic Sticker Animations (達成目標動態小貼紙動畫) */
+@keyframes sticker-wiggle-bounce {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+  25% {
+    transform: translateY(-4px) rotate(-4deg) scale(1.04);
+  }
+  50% {
+    transform: translateY(-1px) rotate(3deg) scale(1.02);
+  }
+  75% {
+    transform: translateY(-5px) rotate(-2deg) scale(1.06);
+  }
+}
+
+@keyframes sticker-sparkle-spin {
+  0% {
+    transform: rotate(0deg) scale(0.9);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.15);
+  }
+  100% {
+    transform: rotate(360deg) scale(0.9);
+  }
+}
+
+@keyframes sticker-glow-ring {
+  0% {
+    box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.7), 0 0 15px rgba(251, 191, 36, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(245, 158, 11, 0), 0 0 25px rgba(251, 191, 36, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(245, 158, 11, 0), 0 0 15px rgba(251, 191, 36, 0.5);
+  }
+}
+
+@keyframes sticker-stamp-pop {
+  0% {
+    transform: scale(0.3) rotate(-20deg);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.15) rotate(5deg);
+    opacity: 1;
+  }
+  80% {
+    transform: scale(0.95) rotate(-2deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.animate-sticker-bounce {
+  animation: sticker-wiggle-bounce 2.8s ease-in-out infinite;
+}
+
+.animate-sticker-sparkle {
+  animation: sticker-sparkle-spin 6s linear infinite;
+}
+
+.animate-sticker-glow {
+  animation: sticker-glow-ring 2s infinite;
+}
+
+.animate-sticker-stamp {
+  animation: sticker-stamp-pop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+
+
+

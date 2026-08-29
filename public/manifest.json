@@ -1,0 +1,18 @@
+{
+  "short_name": "世界童書",
+  "name": "世界童書數位圖書館",
+  "description": "專為各國孩童打造的多語言數位繪本圖書館，支援離線閱讀、智慧語音朗讀與雙語對照。",
+  "icons": [
+    {
+      "src": "./favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": "./",
+  "background_color": "#fffbe2",
+  "theme_color": "#f59e0b",
+  "display": "standalone",
+  "orientation": "any",
+  "scope": "./"
+}
